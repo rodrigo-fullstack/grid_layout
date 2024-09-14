@@ -11,7 +11,29 @@
     display: grid;
     height: 100vh;
     grid-template-columns: auto auto auto;
+    /* Propriedades de Alinhamento Grid
+    - As principais propriedades de Alinhamento do Grid são a Justify-Content e a Align-Items.
+
+    - São comuns à propriedade display: flex;
+    */
+    /*- Justify-Content: 
+    
+    - Realiza o alinhamento horizontal dos elementos
+
+    - justify-content: center; - centraliza horizontalmente o elemento ;
+    - justify-content: start; - alinha na esquerda do elemento pai (esquerda)
+    - justify-content: end; - alinha na direita do elemento pai (direita)
+    - justify-content: space-between; - realiza um espaçamento entre os elementos; 
+    */
     justify-content: center;
+
+    /* Align-Items
+    - Realiza o alinhamento vertical dos elementos
+
+    - align-items: center; - Alinha ao centro vertical do elemento pai
+    - align-items: start; - Alinha à parte superior do elemento pai
+    - align-items: end; - Alinha à parte inferior do elemento
+    */
     align-items: center;
 }
 
