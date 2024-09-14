@@ -5,19 +5,39 @@
     padding: 1rem;
     height: 60vh;
 
-    /* Aplicando Grid pela Primeira Vez */
+    /* Aplicando Grid pela Primeira Vez 
+    Propriedade Display muda a forma de dispor os elementos. Com display grid, a disposição é semelhante a uma tabela, com linhas e colunas.
+    */
     display: grid;
 
-    /*Definindo 4 colunas de 200px (Não ocupa a largura completa)*/
+    /*Grid-template-columns
+    - Realiza a definição do número e tamanho das colunas com a unidade de medida desejada.
+
+    - É recomendável utilizar unidades de medida responsivas como a %, o auto e as novas fr (frações) para definir o tamanho das colunas.
+
+    - Estrutura: 
+    grid-template-columns = col1-medida col2-medida col3-medida...;
+
+    - Definindo 4 colunas de 200px (Não ocupa a largura completa)
+    */
     grid-template-columns: 200px 200px 200px 200px ;
 
-    /*Definindo 3 linhas com altura de 100px */
-    grid-template-rows: repeat(3, 100px);
+    /*Grid-template-rows
     
-    /* align-items: center;
-    justify-content: center; */
-    place-content: center;
-    /* Cada um influencia um no outro */
+    - Realiza a definição da quantidade de linhas e altura das células;
+
+    - Também pode utilizar as mesmas medidas do grid-template-columns
+
+    - Definindo 3 linhas com altura de 100px (você pode alterar para testar)
+    */
+    /*Repeat
+
+    - È uma funçao CSS que realiza a repetição de medidas a quantidade desejada.
+
+    - Como utilizar:
+    repeat(qtd_vezes, valor_com_medida);
+    */
+    grid-template-rows: repeat(3, 100px);
 }
 
 .item{
@@ -25,8 +45,4 @@
     font-family: arial;
     border: 4px solid red;
     padding: 10px;
-}
-
-.negado{
-    margin-bottom: 0;
 }
