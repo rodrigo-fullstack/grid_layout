@@ -6,3 +6,4 @@ O Grid Layout é uma forma de posicionamento de elementos que consiste em organi
 
 É muito utilizado para poder organizar layouts complexos em duas dimensões.
 
+* Favor durante a leitura dos códigos esconder ou exibir os comentários para melhorar a sua leitura
