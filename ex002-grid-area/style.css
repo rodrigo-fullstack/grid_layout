@@ -7,11 +7,24 @@
     padding: 10px;
     font-family: arial;
     display: grid;
+
+    /* Definição das Áreas do Grid 
+    
+    - A Definição das Áreas que os elementos do website ocuparão é feita com a definição de nomes e quantidade de colunas que eles ocuparão.
+
+    - Cada Linha é definida com o nome de identificação dos elementos.
+
+    - A definição do nome de identificação é feita mais abaixo.
+
+    - O tamanho das colunas é feita a partir da unidade de medida fr de forma implícita.
+    */
     grid-template-areas: 
     "header header header header"
     "side-bar main-content main-content main-content"
     "footer footer footer footer";
-    /* grid-template-areas:
+    /* 
+    Não dá certo:
+    grid-template-areas:
     repeat(4, "header")
     "side-bar" repeat(3, "main-content")
     repeat(4, "footer") */
@@ -23,6 +36,11 @@
     padding: 10px;
     color: black;
 }
+
+/* Definições dos nomes de identificação no grid-template-area 
+
+- Essa propriedade grid-area define o nome que identificará o elemento para ocupar as colunas e linhas no grid-template-area.
+*/
 #header{
     grid-area: header;
 }
