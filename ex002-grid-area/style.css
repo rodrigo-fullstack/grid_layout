@@ -28,7 +28,6 @@
 }
 #side-bar{
     grid-area: side-bar;
-    height: auto;
 }
 #main-content{
     grid-area: main-content;
