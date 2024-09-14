@@ -7,6 +7,7 @@
 body{
     width: 100vw;
     min-height: 100vh;
+    /* Definição da imagem de fundo */
     background-image: url(bg.jpg);
     background-position: center;
     background-size: 140%;
@@ -20,6 +21,7 @@ body{
     opacity: 75%;
     border-radius: 10px;
     
+    /* Centralizando container */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,6 +32,7 @@ body{
     font-weight: 1000;
 
     display: grid;
+    /* 3 colunas definidas para tamanho flexível */
     grid-template-columns: auto auto auto;
     gap: 10px;
 }
@@ -41,16 +44,49 @@ body{
 }
 
 #item-1{
+    /* Colunas ocupadas a partir de elementos individuais
+    
+    - Para que a largura do elemento seja definida a partir do elemento individual, utiliza-se grid-column-start e end.
+
+    - A quantidade de colunas é definido com a subtração do end com o start, sendo que o início é igual a 1 e o último é a quantidade de colunas + 1 (4 para esse caso).
+
+    - Para esse caso: 
+    qtd_colunas = fim - inicio; fim = 4; inicio = 1;
+    qtd-colunas = 4 - 1;
+    qtd-colunas = 3;
+    */
     grid-column-start: 1;
     grid-column-end: 4;
+    /* Align-Self
+    
+    - Alinha verticalmente ao retângulo ocupado do grid.
+
+    - Semelhante ao Align-Items.
+    */
     align-self: center;
+
+    /* Justify-Self
+    
+    - Alinha horizontalmente ao retângulo ocupado do grid
+    
+    - Semelhante ao Justify-Content
+    */
     justify-self: center;
-    width: 100%;
+    width: 50%;
     text-align: center;
     padding: 10px;
 }
 
 #item-2{
+    /*Linhas ocupadas a partir de elementos individuais
+    
+    - Para definir a área ocupada por um elemento individual utiliza-se grid-row-start e end.
+
+    - Mesmo cálculo aplicado que as colunas citadas acima
+
+    - Começa a partir de dois pois o elemento #item-1 está ocupando a linha 1
+
+    */
     grid-row-start: 2;
     grid-row-end: 6;
 }
