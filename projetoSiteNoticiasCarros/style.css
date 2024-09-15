@@ -6,4 +6,22 @@
 
 body{
     display: grid;
+    grid-template-areas:
+    "header header header"
+    "main-content main-content side-bar"
+    "footer footer footer"
+    ;
+    gap: 1rem;  
+}
+.nav-header{
+    grid-area: header;
+}
+.main-content{
+    grid-area: main-content;
+}
+.side-bar{
+    grid-area: side-bar;
+}
+.footer{
+    grid-area: footer;
 }
