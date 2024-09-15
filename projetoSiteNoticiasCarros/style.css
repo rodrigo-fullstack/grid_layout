@@ -12,6 +12,7 @@ body{
     "footer footer footer"
     ;
     gap: 1rem;  
+
 }
 .nav-header{
     grid-area: header;
@@ -21,10 +22,13 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-
+    position: sticky;
 }
 .logo{
     flex:1
+}
+.logo img{
+    width: 64px;
 }
 .nav-bar{
     background-color: yellow;
