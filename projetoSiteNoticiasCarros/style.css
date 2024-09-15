@@ -15,13 +15,37 @@ body{
 }
 .nav-header{
     grid-area: header;
+    background-color: blue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+}
+.logo{
+    flex:1
+}
+.nav-bar{
+    background-color: yellow;
+    flex: 2;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
 }
 .main-content{
     grid-area: main-content;
+    background-color: red;
+    margin-left: 1rem;
 }
 .side-bar{
     grid-area: side-bar;
+    background-color: yellow;
+    margin-right: 1rem;
 }
 .footer{
     grid-area: footer;
+    background-color: aqua;
 }
